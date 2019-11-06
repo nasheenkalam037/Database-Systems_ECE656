@@ -1,0 +1,4 @@
+id,select_type,table,partitions,type,possible_keys,key,key_len,ref,rows,filtered,Extra
+1,SIMPLE,a,NULL,ALL,"PRIMARY,instructor_fk",NULL,NULL,NULL,4,25.00,"Using where"
+1,SIMPLE,c,NULL,eq_ref,PRIMARY,PRIMARY,8,StudentCourse.a.deptID,1,100.00,"Using where; Using index"
+1,SIMPLE,b,NULL,ref,offering_inst_fk,offering_inst_fk,5,StudentCourse.a.instID,1,100.00,NULL

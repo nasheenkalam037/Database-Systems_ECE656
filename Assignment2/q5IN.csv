@@ -1,0 +1,4 @@
+id,select_type,table,partitions,type,possible_keys,key,key_len,ref,rows,filtered,Extra
+1,SIMPLE,b,NULL,ALL,"PRIMARY,instructor_fk",NULL,NULL,NULL,4,25.00,"Using where; Using temporary; Using filesort"
+1,SIMPLE,c,NULL,eq_ref,"PRIMARY,ix_faculty",PRIMARY,8,StudentCourse.b.deptID,1,100.00,"Using where"
+1,SIMPLE,a,NULL,ref,offering_inst_fk,offering_inst_fk,5,StudentCourse.b.instID,1,100.00,NULL

@@ -1,0 +1,36 @@
+Part 1: Baseball Data: Sean Lahman has created a sizable database of baseball statistics, with a
+detailed description here: http://seanlahman.com/files/database/readme2016.txt. The data at that
+site is available in two forms, CSV files and .sql, though we will provide local copies as
+necessary. This database comprises 27 tables, with some tables having over 100,000 rows, and
+more than 20 columns. For this initial lab, you will begin to familiarize yourself with this
+dataset.
+
+1. Create SQL queries to answer the following questions:
+(a) How many players have an unknown birthdate?
+
+- 449
+
+(b) Are more players in the Hall of Fame dead or alive? (Output the number alive minus the
+number dead)
+
+- Alive minus death : '-1699'
+So, more people in hall of fame is dead than alive.
+
+(c) What is the name and total pay of the player with the largest total salary?
+
+- 'Alexander Enmanuel Rodriguez', '398416252'
+
+(d) What is the average number of Home Runs a player has?
+
+- '2.8136'
+
+(e) If we only count players who got at least 1 Home Run, what is the average number of Home
+Runs a player has?
+
+- '7.2428'
+
+(f) If we define a player as a good batter if they have more than the average number of Home
+Runs, and a player is a good Pitcher if they have more than the average number of ShutOut
+games, then how many players are both good batters and good pitchers?
+
+- 7
